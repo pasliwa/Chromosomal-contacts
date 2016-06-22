@@ -59,7 +59,7 @@ def display_contacts(contact_matrix, x_1, x_2, y_1, y_2, radius, colormap, logar
     :param colormap: string - cm.colormap
     :param logarithmic: bool - True if colormap should be logarithmic
     :param interpolate: bool - True if the image should be displayed with interpolation
-    :return:
+    :return: None, displays the matrix using imshow from pyplot
     """
     blurred_matrix = scipy.ndimage.gaussian_filter(contact_matrix, sigma=(radius, radius))
     # if no blur then radius=0
